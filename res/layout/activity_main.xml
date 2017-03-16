@@ -1,1 +1,138 @@
 
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ff1ba1ee"
+    tools:context="com.example.ac.weathera.MainActivity">
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:text="City"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+        android:id="@+id/region"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#fff"
+        android:layout_toRightOf="@+id/city"
+        android:text="Region"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#fff"
+        android:layout_toRightOf="@+id/region"
+        android:text="Country"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:id="@+id/temptext"
+        android:textColor="#fff"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/city"
+        android:textSize="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:id="@+id/high"
+        android:textColor="#fff"
+        android:text="High"
+        android:layout_marginTop="20dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/temptext"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/hightext"
+        android:textSize="20dp"
+        android:text="High"
+        android:textStyle="normal"
+        android:layout_toRightOf="@+id/high"
+        android:layout_below="@id/city"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="84dp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/low"
+        android:textColor="#fff"
+        android:layout_below="@+id/high"
+        android:text="Low"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lowtext"
+        android:textSize="20dp"
+        android:text="Low"
+        android:textStyle="normal"
+        android:layout_toRightOf="@+id/high"
+        android:layout_below="@id/high"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter city here"
+        android:layout_below="@+id/lowtext"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button"
+        android:text="Submit"
+        android:layout_below="@+id/input"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/forecast"
+        android:text="7 Day Forecast"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
